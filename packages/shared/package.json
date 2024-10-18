@@ -1,0 +1,25 @@
+{
+  "name": "@repo/shared",
+  "version": "0.0.1",
+  "dependencies": {
+    "backend": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "react": "catalog:react18",
+    "react-dom": "catalog:react18",
+    "@tanstack/react-query": "^5.59.14",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "@trpc/react-query": "catalog:",
+    "superjson": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react18",
+    "@types/react-dom": "catalog:react18",
+    "typescript": "catalog:"
+  },
+  "exports": {
+    "./trpc": "./src/trpc/index.ts"
+  }
+}
