@@ -1,7 +1,6 @@
 import { api } from '@repo/shared/trpc';
 import { Button } from '@repo/ui/components/ui/button';
 
-import { useEffect, useState } from 'react';
 import { isElectron } from './utils';
 
 // Demo Function to show a native dialog in Electron
@@ -14,16 +13,6 @@ const showNativeDialog = () => {
 };
 
 const App = () => {
-  const [env, setEnv] = useState<string>('');
-
-  useEffect(() => {
-    if (isElectron()) {
-      setEnv('Electron');
-    } else {
-      setEnv('Web');
-    }
-  }, []);
-
   const { data, isLoading, error } = api.greeting.useQuery();
 
   if (isLoading) return <div>Loading...</div>;
@@ -31,7 +20,7 @@ const App = () => {
 
   return (
     <div>
-      <p>Environment: {env}</p>
+      <p>Environment: {isElectron() ? 'Desktop' : 'Web'}</p>
       <p>tRPC: {data}</p>
       <Button onClick={showNativeDialog}>Show native dialog</Button>
     </div>
