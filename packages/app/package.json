@@ -5,15 +5,17 @@
     "@repo/ui": "workspace:*",
     "@repo/shared": "workspace:*",
     "react": "catalog:react18",
-    "react-dom": "catalog:react18",
-    "@electron-toolkit/preload": "^3.0.1"
+    "react-dom": "catalog:react18"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:react18",
     "@types/react-dom": "catalog:react18",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "autoprefixer": "catalog:"
   },
   "exports": {
     ".": "./src/index.ts"

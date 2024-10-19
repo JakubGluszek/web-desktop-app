@@ -10,7 +10,8 @@
     "@trpc/client": "catalog:",
     "@trpc/server": "catalog:",
     "@trpc/react-query": "catalog:",
-    "superjson": "catalog:"
+    "superjson": "catalog:",
+    "@electron-toolkit/preload": "catalog:"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
@@ -20,6 +21,7 @@
     "typescript": "catalog:"
   },
   "exports": {
-    "./trpc": "./src/trpc/index.ts"
+    "./trpc": "./src/trpc/index.ts",
+    "./types/*": "./src/types/*.d.ts"
   }
 }

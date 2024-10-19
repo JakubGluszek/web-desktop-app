@@ -20,7 +20,7 @@
     "build:linux": "electron-vite build && electron-builder --linux"
   },
   "dependencies": {
-    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/preload": "catalog:",
     "@electron-toolkit/utils": "^3.0.0",
     "@repo/shared": "workspace:*",
     "@repo/ui": "workspace:*",

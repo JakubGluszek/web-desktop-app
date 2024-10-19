@@ -6,6 +6,9 @@ settings:
 
 catalogs:
   default:
+    '@electron-toolkit/preload':
+      specifier: ^3.0.1
+      version: 3.0.1
     '@trpc/client':
       specifier: ^11.0.0-rc.576
       version: 11.0.0-rc.586
@@ -110,7 +113,7 @@ importers:
   apps/desktop:
     dependencies:
       '@electron-toolkit/preload':
-        specifier: ^3.0.1
+        specifier: 'catalog:'
         version: 3.0.1(electron@30.5.1)
       '@electron-toolkit/utils':
         specifier: ^3.0.0
@@ -182,9 +185,6 @@ importers:
 
   apps/web:
     dependencies:
-      '@electron-toolkit/preload':
-        specifier: ^3.0.1
-        version: 3.0.1(electron@30.5.1)
       '@repo/app':
         specifier: workspace:*
         version: link:../../packages/app
@@ -237,9 +237,6 @@ importers:
 
   packages/app:
     dependencies:
-      '@electron-toolkit/preload':
-        specifier: ^3.0.1
-        version: 3.0.1(electron@30.5.1)
       '@repo/shared':
         specifier: workspace:*
         version: link:../shared
@@ -265,12 +262,24 @@ importers:
       '@types/react-dom':
         specifier: catalog:react18
         version: 18.3.1
+      autoprefixer:
+        specifier: 'catalog:'
+        version: 10.4.20(postcss@8.4.47)
+      postcss:
+        specifier: 'catalog:'
+        version: 8.4.47
+      tailwindcss:
+        specifier: 'catalog:'
+        version: 3.4.14
       typescript:
         specifier: 'catalog:'
         version: 5.6.3
 
   packages/shared:
     dependencies:
+      '@electron-toolkit/preload':
+        specifier: 'catalog:'
+        version: 3.0.1(electron@30.5.1)
       '@repo/ui':
         specifier: workspace:*
         version: link:../ui

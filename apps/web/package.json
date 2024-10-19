@@ -14,8 +14,7 @@
     "@repo/shared": "workspace:*",
     "@repo/app": "workspace:*",
     "react": "catalog:react18",
-    "react-dom": "catalog:react18",
-    "@electron-toolkit/preload": "^3.0.1"
+    "react-dom": "catalog:react18"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
@@ -23,11 +22,11 @@
     "@vitejs/plugin-react": "catalog:",
     "postcss": "catalog:",
     "tailwindcss": "catalog:",
+    "autoprefixer": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:react18",
     "@types/react-dom": "catalog:react18",
     "typescript": "catalog:",
-    "autoprefixer": "catalog:",
     "globals": "^15.9.0"
   }
 }

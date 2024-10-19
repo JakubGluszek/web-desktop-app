@@ -13,8 +13,13 @@
     "esModuleInterop": true,
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
+    "types": [
+      "vite/client"
+    ],
     "paths": {
-      "@renderer/*": ["src/renderer/src/*"]
+      "@renderer/*": [
+        "src/renderer/src/*"
+      ]
     }
   }
 }
