@@ -53,10 +53,28 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Create .env file for desktop app
+        run: |
+          echo "VITE_APP_VERSION=${{ github.sha }}" >> apps/desktop/.env
+          echo "NODE_ENV=production" >> apps/desktop/.env
+          echo "VITE_API_BASE_URL=${{ env.VITE_API_BASE_URL }}" >> apps/desktop/.env
+          echo "GH_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> apps/desktop/.env
+
       - name: Build Electron app
         run: |
           pnpm --filter desktop build
-          pnpm --filter desktop build:${{ matrix.os == 'ubuntu-latest' && 'linux' || matrix.os == 'windows-latest' && 'win' || 'mac' }}
+
+      - name: Build Electron for Linux
+        if: matrix.os == 'ubuntu-latest'
+        run: pnpm --filter desktop build:linux
+
+      - name: Build Electron for Windows
+        if: matrix.os == 'windows-latest'
+        run: pnpm --filter desktop build:win
+
+      - name: Build Electron for MacOS
+        if: matrix.os == 'macos-latest'
+        run: pnpm --filter desktop build:mac
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
