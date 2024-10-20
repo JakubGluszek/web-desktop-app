@@ -17,15 +17,16 @@ This monorepo contains a shared React package (`@repo/app`) that adapts to diffe
 
 ## Features
 
-- **Shared Codebase**: `@repo/app` adapts to web or desktop environments
-- **TypeScript**: Ensures type safety across the entire project
-- **Vite & Electron-Vite**: Fast development for both web and desktop
-- **Bun Backend**: High-performance API with Hono and tRPC
-- **Turborepo**: Efficient monorepo management and task running
-- **shadcn/ui**: Beautifully designed components that you can copy and paste into your apps
-- **Prettier**: Consistent code formatting across the entire project
-- **Electron-builder**: Automated build and distribution process for the desktop app
-- **S3 Storage**: Utilizes Amazon S3 buckets for efficient file storage and retrieval
+- ✅ **Shared Codebase**: `@repo/app` adapts to web or desktop environments
+- ✅ **TypeScript**: Ensures type safety across the entire project
+- ✅ **Vite & Electron-Vite**: Fast development for both web and desktop
+- ✅ **Bun Backend**: High-performance API with Hono and tRPC
+- ✅ **Turborepo**: Efficient monorepo management and task running
+- ✅ **shadcn/ui**: Beautifully designed components that you can copy and paste into your apps
+- ✅ **Prettier**: Consistent code formatting across the entire project
+- ✅ **S3 Storage**: Utilizes Amazon S3 buckets for efficient file storage and retrieval
+- ✅ **Electron-builder**: Automated build and distribution process for the desktop app
+- ❌ **Electron Updates**: Implementing auto-update functionality for the desktop app
 
 ## Project Structure
 
