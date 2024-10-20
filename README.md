@@ -172,33 +172,25 @@ pnpm format:check
 
 ## TODO
 
-- [ ] **Develop Authentication Flow**: 
-   - [ ] Create a secure authentication system for user login and management.
-   - [ ] Implement this across the web, desktop, and API applications.
+- [ ] **Create Astro "site" App**: 
+   - [ ] Set up the `apps/site` directory for the Astro-based website.
+   - [ ] Develop the landing page with `/register` and `/login` routes.
+
+- [ ] **Develop API for Authentication**: 
+   - [ ] Implement secure user authentication for the API application.
+   - [ ] Ensure integration with the Astro site, web app, and desktop app for login and registration.
 
 - [ ] **Enhance API App for Download Management**:
    - [ ] Update `apps/api` to handle download request proxying:
-     - [ ] Implement rate limiting to prevent abuse.
-     - [ ] Set up secure proxying of downloads from the S3 bucket.
-   - [ ] Create endpoints for version information and update checks.
+     - [ ] Implement rate limiting.
+     - [ ] Secure proxying of downloads from S3.
+   - [ ] Create endpoints for version info and update checks.
 
-- [ ] **Update S3 Integration**:
-   - [ ] Modify the current S3 setup to work with the new API proxy.
-   - [ ] Ensure secure and efficient file retrieval from S3 buckets.
-   - [ ] Implement versioning and organization for different application builds.
+- [ ] **Modify S3 setup to work with the new API proxy**
 
-- [ ] **Implement Auto-Update Feature**: 
-   - [ ] Set up the auto-update functionality for the desktop application.
-   - [ ] Configure Electron-builder to support the new update mechanism.
-
-- [ ] **Refine Electron-builder Workflow**: 
-   - [ ] Update the Electron-builder configuration to align with the new auto-update and distribution strategy.
-   - [ ] Ensure builds are correctly uploaded and versioned for the new download system.
-
-- [ ] **Create Astro "site" App**: 
-   - [ ] Add a new `apps/site` directory for the Astro-based website.
-   - [ ] Develop a landing page and download portal for the application.
-   - [ ] Implement dynamic links pointing to the latest application versions, utilizing the API endpoints.
+- [ ] **Implement Auto-Update Functionality**: 
+   - [ ] Set up auto-update functionality for the desktop application.
+   - [ ] Configure Electron-builder for the new update mechanism.
 
 ## Contributing
 
