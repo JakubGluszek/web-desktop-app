@@ -1,4 +1,4 @@
-# Web and Desktop App Monorepo with Turborepo and shadcn/ui
+# Unified Web and Desktop Application Monorepo
 
 ![Turborepo](https://img.shields.io/badge/Turborepo-Powered-blueviolet)
 ![React](https://img.shields.io/badge/React-18-blue)
