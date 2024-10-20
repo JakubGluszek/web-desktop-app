@@ -5,7 +5,8 @@
     "@repo/ui": "workspace:*",
     "@repo/shared": "workspace:*",
     "react": "catalog:react18",
-    "react-dom": "catalog:react18"
+    "react-dom": "catalog:react18",
+    "lucide-react": "catalog:"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
