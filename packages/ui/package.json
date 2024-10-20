@@ -14,11 +14,13 @@
     "@types/react": "catalog:react18",
     "autoprefixer": "catalog:",
     "postcss": "catalog:",
+    "postcss-load-config": "^6",
     "tailwindcss": "catalog:",
-    "typescript": "catalog:",
-    "postcss-load-config": "^6"
+    "typescript": "catalog:"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.1.2",
+    "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
