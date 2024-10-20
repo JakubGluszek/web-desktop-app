@@ -88,11 +88,11 @@
     "enable": true,
     "custom_scope": false,
     "max_items": 20,
-    "initial_value": "client",
+    "initial_value": "app",
     "options": [
       {
-        "value": "client",
-        "label": "client"
+        "value": "app",
+        "label": "app"
       },
       {
         "value": "web",
@@ -135,7 +135,13 @@
   "commit_footer": {
     "enable": true,
     "initial_value": [],
-    "options": ["closes", "trailer", "breaking-change", "deprecated", "custom"]
+    "options": [
+      "closes",
+      "trailer",
+      "breaking-change",
+      "deprecated",
+      "custom"
+    ]
   },
   "breaking_change": {
     "add_exclamation_to_title": false
@@ -171,7 +177,13 @@
     "separator": ""
   },
   "branch_action_default": "branch",
-  "branch_order": ["user", "version", "type", "ticket", "description"],
+  "branch_order": [
+    "user",
+    "version",
+    "type",
+    "ticket",
+    "description"
+  ],
   "enable_worktrees": true,
   "overrides": {}
 }
