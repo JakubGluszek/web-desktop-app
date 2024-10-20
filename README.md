@@ -11,6 +11,10 @@
 
 This monorepo contains a shared React package (`@repo/app`) that adapts to different environments, powering both a Vite-based web app and an Electron-Vite desktop app. It uses Turborepo for efficient management and development across packages, with UI components powered by shadcn/ui and code formatting handled by Prettier.
 
+## Preview
+
+![App Preview](.docs/preview.png)
+
 ## What's Inside?
 
 ### Apps
@@ -37,18 +41,14 @@ This monorepo contains a shared React package (`@repo/app`) that adapts to diffe
 ### Installation
 
 1. Clone the repository:
-
    ```sh
    git clone https://github.com/JakubGluszek/web-desktop-app.git
    cd web-desktop-app
    ```
-
 2. Install dependencies:
-
    ```sh
    pnpm install
    ```
-
 3. Set up environment variables:
    ```sh
    chmod +x ./scripts/generate-env.sh
