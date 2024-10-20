@@ -69,8 +69,8 @@ This monorepo contains a shared React package (`@repo/app`) that adapts to diffe
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/JakubGluszek/web-desktop-app.git
-   cd web-desktop-app
+   git clone https://github.com/JakubGluszek/unified-app-monorepo.git
+   cd unified-app-monorepo
    ```
 2. Install dependencies:
    ```sh

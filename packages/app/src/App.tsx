@@ -97,7 +97,7 @@ const App = ({ config }: { config: { appVersion?: string; isDev: boolean } }) =>
           )}
           <div className="text-center mt-8">
             <a
-              href="https://github.com/JakubGluszek/web-desktop-app"
+              href="https://github.com/JakubGluszek/unified-app-monorepo"
               target="_blank"
               className="font-extrabold tracking-tight hover:underline underline-offset-4 hover:text-primary"
             >
