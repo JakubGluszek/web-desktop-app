@@ -73,7 +73,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Upload to S3
         run: |
-          aws s3 cp apps/desktop/dist s3://${{ secrets.S3_BUCKET_NAME }}/${{ github.sha }} --recursive
+          aws s3 cp apps/desktop/dist s3://${{ secrets.S3_BUCKET_NAME }}/releases/${{ github.sha }} --recursive
       - name: Upload artifacts (for GitHub Actions)
         uses: actions/upload-artifact@v3
         with:
