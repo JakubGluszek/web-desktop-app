@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "ui": "pnpm dlx shadcn@latest"
+    "ui": "pnpm dlx shadcn@latest",
+    "clean": "rm -rf ./node_modules/"
   },
   "peerDependencies": {
     "react": "^18"

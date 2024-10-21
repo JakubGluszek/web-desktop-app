@@ -1,6 +1,9 @@
 {
   "name": "@repo/app",
   "version": "0.0.1",
+  "scripts": {
+    "clean": "rm -rf ./node_modules/"
+  },
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@repo/shared": "workspace:*",

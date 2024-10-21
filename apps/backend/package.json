@@ -6,7 +6,8 @@
     "dev": "bun run --hot ./src/index.ts",
     "build": "bun build --entrypoints ./src/index.ts --outdir ./dist",
     "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
-    "start": "bun run ./dist/index.js"
+    "start": "bun run ./dist/index.js",
+    "clean": "rm -rf ./node_modules/ ./dist/"
   },
   "dependencies": {
     "superjson": "catalog:",

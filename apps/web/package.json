@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf ./node_modules/ ./dist"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",

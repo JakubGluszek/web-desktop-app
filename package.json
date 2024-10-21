@@ -13,7 +13,7 @@
     "commit": "pnpm better-commits",
     "prepare": "husky",
     "generate-env": "./scripts/generate-env.sh",
-    "clean": "./scripts/clean.sh"
+    "clean": "turbo clean --force && rm -rf ./node_modules/"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
