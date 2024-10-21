@@ -7,7 +7,11 @@ import { appRouter } from './api/trpc';
 const app = new Hono()
   .use(
     cors({
-      origin: ['http://localhost:3000', 'http://localhost:5173'],
+      origin: [
+        'http://localhost:3000',
+        'http://localhost:5173',
+        'https://app.unified-app.sentio.dev'
+      ],
       credentials: true
     })
   )
